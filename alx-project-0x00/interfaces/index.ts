@@ -1,14 +1,19 @@
 // interfaces/index.ts
 
-// Interface for Card props
+// For Card component
 export interface CardProps {
     title: string;
     description: string;
     image: string;
 }
 
-// Interface for Pill props
+// For Pill component
 export interface PillProps {
-    label: string;
-    color?: string;
+    title: string;
+}
+
+// For Button component
+export interface ButtonProps {
+    title: string;
+    styles: string;
 }
