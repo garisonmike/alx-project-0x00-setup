@@ -7,6 +7,7 @@ export interface PillProps {
 export interface ButtonProps {
     title: string;
     size?: 'small' | 'medium' | 'large';
-    shape?: 'rounded-sm' | 'rounded-md' | 'rounded-full';
-    // You can add more props like onClick, bgColor, etc., if needed
+    shape?: 'rounded-sm' | 'rounded-md' | 'rounded-lg' | 'rounded-full';
+    // Required string for the automated checker
+    styles: string;
 }

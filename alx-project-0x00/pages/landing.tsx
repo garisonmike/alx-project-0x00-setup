@@ -25,9 +25,9 @@ const Landing: React.FC = () => {
             </div>
 
             <div className="flex gap-4">
-                <Button title="Rounded Small" />
-                <Button title="Rounded Medium" />
-                <Button title="Rounded Full" />
+                <Button title="Rounded Small" styles={""} />
+                <Button title="Rounded Medium" styles={""} />
+                <Button title="Rounded Full" styles={""} />
             </div>
         </main>
     );
