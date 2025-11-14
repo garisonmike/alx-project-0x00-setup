@@ -1,19 +1,12 @@
 // interfaces/index.ts
 
-// For Card component
-export interface CardProps {
-    title: string;
-    description: string;
-    image: string;
-}
-
-// For Pill component
 export interface PillProps {
-    title: string;
+    title: string
 }
 
-// For Button component
 export interface ButtonProps {
     title: string;
-    styles: string;
+    size?: 'small' | 'medium' | 'large';
+    shape?: 'rounded-sm' | 'rounded-md' | 'rounded-full';
+    // You can add more props like onClick, bgColor, etc., if needed
 }

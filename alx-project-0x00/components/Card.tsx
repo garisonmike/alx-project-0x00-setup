@@ -1,7 +1,12 @@
 // components/Card.tsx
 import Image from "next/image";
 import React from "react";
-import { CardProps } from "../interfaces";
+
+type CardProps = {
+    title: string;
+    description: string;
+    image: string;
+};
 
 const Card: React.FC<CardProps> = ({ title, description, image }) => {
     return (
