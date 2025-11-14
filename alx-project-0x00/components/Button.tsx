@@ -1,7 +1,7 @@
-import { ButtonProps } from "@/interfaces"; // Import the interface
+// components/Button.tsx
+import { ButtonProps } from "@/interfaces";
 import React from 'react';
 
-// A helper function to determine the size classes
 const getSizeClasses = (size: ButtonProps['size']): string => {
     switch (size) {
         case 'small':
@@ -11,16 +11,19 @@ const getSizeClasses = (size: ButtonProps['size']): string => {
         case 'large':
             return 'px-6 py-3 text-lg';
         default:
-            return 'px-4 py-2 text-base'; // Default to medium
+            return 'px-4 py-2 text-base';
     }
 };
 
 const Button: React.FC<ButtonProps> = ({ title, size = 'medium', shape = 'rounded-md' }) => {
+    // Use a sensible default value for the shape if none is provided
+    const resolvedShape = shape || 'rounded-md';
+
     // Combine base styles, size styles, and shape styles
     const baseStyles = 'bg-blue-600 text-white font-medium transition duration-150 ease-in-out hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50';
 
     const sizeClasses = getSizeClasses(size);
-    const shapeClass = shape; // shape already contains the Tailwind class
+    const shapeClass = resolvedShape;
 
     const buttonClasses = `${baseStyles} ${sizeClasses} ${shapeClass}`;
 

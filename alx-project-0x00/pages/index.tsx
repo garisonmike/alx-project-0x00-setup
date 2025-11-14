@@ -1,46 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import Image from "next/image";
-import Card from "../components/Card";
-import Pill from "../components/Pill";
+// pages/index.tsx
+import React from 'react';
 
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <div className={`${geistSans.className} ${geistMono.className}`}>
-      <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
-        <h1 className="text-4xl font-extrabold text-gray-800 mb-6">
-          Welcome to ALX Project 0x00
-        </h1>
-
-        <div className="flex gap-2 mb-4">
-          <Pill text="Next.js" color="bg-gray-800" />
-          <Pill text="TypeScript" color="bg-blue-600" />
-          <Pill text="Tailwind CSS" color="bg-cyan-500" />
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Card
-            title="Beautiful Homes"
-            description="Find your dream home easily with our curated listings."
-            image="/assets/images/house.png"
-          />
-          <Card
-            title="Rated Excellence"
-            description="Our clients rate us 5 stars for quality and service."
-            image="/assets/images/star.png"
-          />
-        </div>
-      </main>
-    </div>
-  );
+    <main className="flex flex-col h-screen justify-center items-center text-4xl font-semibold">
+      <h1>Airbnb Application Clone system</h1>
+      <button className=" border px-3 py-1 text-lg mt-3  bg-blue-500 text-white rounded-full">Get Started</button>
+    </main>
+  )
 }
+
+export default Home;

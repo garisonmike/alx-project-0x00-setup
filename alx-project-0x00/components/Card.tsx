@@ -19,11 +19,11 @@ const Card: React.FC = () => {
             <div className="flex items-center justify-between">
                 <div>
                     <h3 className=" font-semibold text-[22px]">Villa Arrecife Beach House</h3>
-                    <p className=" font-medium text-[17px] text-[#929292]">Sideman, Bali, Indonesia</p>
+                    <p className=" font-medium text=[17px] text-[#929292]">Sideman, Bali, Indonesia</p>
                 </div>
                 <div className="flex items-center">
                     <Image src={STAR_IMAGE} alt="star" />
-                    <p className=" font-medium text-[17px] ml-2">4.76</p>
+                    <p className=" font-medium text=[17px] ml-2">4.76</p>
                 </div>
             </div>
 
@@ -39,6 +39,7 @@ const Card: React.FC = () => {
                                 </clipPath>
                             </defs>
                         </svg>
+
                         <p className="ml-1 text-[12.95px] font-medium">2</p>
                     </div>
                     <div className="flex items-center">
@@ -49,7 +50,6 @@ const Card: React.FC = () => {
                         <p className="ml-1 text-[12.95px] font-medium">2-4</p>
                     </div>
                 </div>
-                <p className=" text-[22px] font-semibold">$2,450<span className=" text-[14px] text-[#787878]">/n</span></p>
                 <p className=" text-[22px] font-semibold">$2,450<span className=" text-[14px] text-[#787878]">/n</span></p>
             </div>
         </div>
